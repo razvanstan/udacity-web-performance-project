@@ -34,8 +34,11 @@ form {
   /*width: 256px;*/
   z-index: -1;
   height: 100px; width: 73.333px;
-  background: url('../images/pizza.png') no-repeat;
+  background: url('../images/pizza.png') no-repeat;    /* add mover background image to reduce number of image requests*/
   background-size: 100%;
+
+  will-change: transform;
+  z-index: -1;
 }
 
 .randomPizzaContainer {
@@ -43,6 +46,24 @@ form {
   display: flex;
   width: 33.33%;
   height: 325px;
+
+  will-change: transform;
+
+  text-transform: capitalize;
+}
+
+.randomPizzaContainer.size-1 {
+  width: 25%;
+}
+
+
+.randomPizzaContainer.size-2 {
+  width: 33.33%;
+}
+
+
+.randomPizzaContainer.size-3 {
+  width: 50%;
 }
 
 .randomPizzaContainer:after {
