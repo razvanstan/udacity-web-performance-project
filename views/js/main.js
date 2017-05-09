@@ -198,7 +198,7 @@ function updatePositions() {
 
     var phases = [];
     for (var i = 0; i < 5; i++) {
-        phases[i] = documentPosition + i;
+        phases[i] = Math.sin(documentPosition + i);
     }
     for (var i = 0; i < randomPizzas; i++) {
         items[i].style.left = items[i].basicLeft + 100 * phases[i % 5] + 'px';

@@ -1,5 +1,10 @@
 ## Website Performance Optimization portfolio project
-#### What was changed here: 
+
+Project can be opened by running locally index.html in your browser, 
+or can be checked here: https://razvanstan.github.io/udacity-web-performance-project/
+
+
+#### What was changed: 
 
 HTML: 
 - move scripts on footer and set async attribute on them
